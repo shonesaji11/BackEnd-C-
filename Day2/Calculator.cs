@@ -11,10 +11,10 @@ namespace Calculator
         static void Main(string[] args)
         {
             //addNo();
-            string val = null; //"100.11" , "999999999999999999"
-            int result;
+            dynamic val = "1000"; //"100.11" , "999999999999999999"
+            /*int result;
             bool ifSuccess = int.TryParse(val, out result);
-            Console.WriteLine(result);
+            Console.WriteLine(ifSuccess);*/
 
             //Boxing
             int i = 30;
@@ -25,10 +25,36 @@ namespace Calculator
             Object MyObj1 = 40;
             int j = (int)MyObj1;
             Console.WriteLine(j);
+            while (true)
+            {
+                string no;
+                Console.Write("Enter Number :");
+                no = Console.ReadLine();
+                int result;
+                
+                try
+                {   
+                    if (no == "q")
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        result = Convert.ToInt32(no);
+                        Console.WriteLine("Result of Equation : {0}", QE(result));                       
+                    }
+                }
+                catch(OverflowException)
+                {
+                    Console.WriteLine("Integer Overflow !!");
 
-            Console.WriteLine("Result of Equation : {0}", QE(2));
-
-
+                }
+                catch
+                {
+                    Console.WriteLine("Enter Valid Integer");
+                }
+               
+            }
             Console.ReadLine();
         }
 
@@ -40,6 +66,7 @@ namespace Calculator
             a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter first no : ");
             b = Convert.ToInt32(Console.ReadLine());
+            
             Console.WriteLine("The sum is {0}", a + b);
             
         }
@@ -50,4 +77,3 @@ namespace Calculator
         }
     }
 }
-
