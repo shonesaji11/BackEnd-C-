@@ -77,26 +77,36 @@ namespace ConsoleApp1
             Console.WriteLine("Hello World");
             byte b1 = 45; //455 wont work
             sbyte b2 = -45; //assigning b1 = b2 will not work
-            Console.WriteLine("{b1} and {b2}");
+            float balance = 10.4F; //by default decimal nos are of type double ; F at the end makes it float
+            dynamic some_data = 10; //We can change the type of data held by the variable using dynamic
+
+            some_data = "string"; // dynamic variable need not be initialized
+            Console.WriteLine("{0} and {1}" , b1, b2);
 
             Object obj = new object();
             User user1 = new User();
             obj = user1;
             Console.WriteLine(typeof(User));
             Console.WriteLine(user1 is User);
-            Console.ReadLine();
-
-
             
 
+            var name = "Welcome"; // with var  we need to intiliaze the variable
+            var a1 = 34;
+            Console.WriteLine("name = {0} a={1}", name, a1);
 
 
-    }
+            ArrayDemo arobj = new ArrayDemo();
+            arobj.Trial(); //function inside Class1.cs
+
+
+
+
+            Console.ReadLine();
+        }
 }
 
 
 }
-
 
 
 
