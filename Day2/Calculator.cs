@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,25 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            addNo();
+            //addNo();
+            string val = null; //"100.11" , "999999999999999999"
+            int result;
+            bool ifSuccess = int.TryParse(val, out result);
+            Console.WriteLine(result);
+
+            //Boxing
+            int i = 30;
+            Object MyObj = i;
+            Console.WriteLine(i);
+
+            //UnBoxing
+            Object MyObj1 = 40;
+            int j = (int)MyObj1;
+            Console.WriteLine(j);
+
+            Console.WriteLine("Result of Equation : {0}", QE(2));
+
+
             Console.ReadLine();
         }
 
@@ -25,5 +43,11 @@ namespace Calculator
             Console.WriteLine("The sum is {0}", a + b);
             
         }
+
+        static int QE(int y)
+        {
+            return y*y + 2 * y + 1;
+        }
     }
 }
+
