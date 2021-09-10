@@ -19,9 +19,9 @@ namespace Calculator
             int a;
             int b;
             Console.WriteLine("Enter first no : ");
-            a = Convert.ToInt16(Console.ReadLine());
+            a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter first no : ");
-            b = Convert.ToInt16(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("The sum is {0}", a + b);
             
         }
