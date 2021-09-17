@@ -1,0 +1,7 @@
+C:\Users\shone\OneDrive\Documents\soti\soti-back-end\DAY6\bin\Debug\DAY6.exe.config
+C:\Users\shone\OneDrive\Documents\soti\soti-back-end\DAY6\bin\Debug\DAY6.exe
+C:\Users\shone\OneDrive\Documents\soti\soti-back-end\DAY6\bin\Debug\DAY6.pdb
+C:\Users\shone\OneDrive\Documents\soti\soti-back-end\DAY6\obj\Debug\DAY6.csproj.AssemblyReference.cache
+C:\Users\shone\OneDrive\Documents\soti\soti-back-end\DAY6\obj\Debug\DAY6.csproj.CoreCompileInputs.cache
+C:\Users\shone\OneDrive\Documents\soti\soti-back-end\DAY6\obj\Debug\DAY6.exe
+C:\Users\shone\OneDrive\Documents\soti\soti-back-end\DAY6\obj\Debug\DAY6.pdb
